@@ -1,16 +1,10 @@
 # Forja
-#### Asignatura: *Ingeniería Web: Visión General*
-#### [Máster en Ingeniería Web por la U.P.M.](http://miw.etsisi.upm.es)
+## Asignatura: *Ingeniería Web: Visión General*
+> #### Práctica de Software Colaborativo
 
-### Tecnologías necesarias
-* Java
-* Maven
-* IntelliJ
-* GitHub
+>> ##### Descripción
+>>> Práctica colaborativa entre alumnos del máster. Arquitecto Bruno Martín López
 
-### Descripción
-Este proyecto pretende ser una plantilla maven para crear un proyecto
-1.- Descomprimir en la carpeta de trabajo
-1.- Editar el pom.xml y cambiarle el nombre del proyecto
-1.- Desde IntelliJ, `Import Project`, marcar `Create Project from external model` y elegir `Maven`
+[![Build Status](https://travis-ci.org/miw-upm/IWVG-forge.svg?branch=develop)](https://travis-ci.org/miw-upm/IWVG-forge)
 
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3AIWVG-forge&metric=alert_status)
