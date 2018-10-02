@@ -29,7 +29,6 @@ package IWVG.SwC.BrunoMartin;
 public class Fraction {
 
     private int numerator;
-
     private int denominator;
 
     public Fraction(int numerator, int denominator) {

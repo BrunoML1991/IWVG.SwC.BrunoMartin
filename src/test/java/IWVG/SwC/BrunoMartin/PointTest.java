@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PointTest {
+
     private Point point;
 
     @BeforeEach
@@ -18,7 +19,7 @@ class PointTest {
         assertEquals(2, point.getX());
         assertEquals(3, point.getY());
     }
-    
+
     @Test
     void testPointInt() {
         point = new Point(2);

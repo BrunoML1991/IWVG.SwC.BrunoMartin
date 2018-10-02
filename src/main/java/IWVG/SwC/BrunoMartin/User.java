@@ -3,9 +3,7 @@ package IWVG.SwC.BrunoMartin;
 public class User {
 
     private int number;
-
     private String name;
-
     private String familyName;
 
     public User(int number, String name, String familyName) {
