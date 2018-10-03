@@ -30,4 +30,10 @@ public class Fraction {
         return (this.numerator<this.denominator);
     }
 
+    public void invert() {
+        int temp = this.numerator;
+        this.numerator = this.denominator;
+        this.denominator = temp;
+    }
+
 }
