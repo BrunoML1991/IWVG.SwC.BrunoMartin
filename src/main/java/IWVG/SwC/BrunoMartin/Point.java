@@ -26,6 +26,16 @@ public class Point {
         return Math.atan((double) this.y / this.x);
     }
 
+    public double getAngle(Point target) {
+        double angle = (double) Math.toDegrees(Math.atan2(target.y - y, target.x - x));
+
+        if(angle < 0){
+            angle += 360;
+        }
+
+        return angle;
+    }
+
     public void translateOrigin(Point origin) {
         this.x -= origin.getX();
         this.y -= origin.getY();
