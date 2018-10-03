@@ -3,7 +3,12 @@
 > #### Práctica de Software Colaborativo
 
 >> ##### Descripción
->>> Práctica colaborativa entre alumnos del máster. Arquitecto Bruno Martín López
+>>> Práctica colaborativa entre alumnos del máster. Arquitecto Bruno Martín López  
+  
+### Programadores  
+[Xavier Sotomayor](https://github.com/b2lero)  
+[Miguel Calderón](https://github.com/miguelcalderons)  
+[Joel Liriano](https://github.com/jliriano)
 
 ### develop status
 
