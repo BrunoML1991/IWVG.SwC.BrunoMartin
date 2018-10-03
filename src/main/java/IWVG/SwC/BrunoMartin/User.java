@@ -36,4 +36,8 @@ public class User {
         return this.familyName;
     }
 
+    public String uppercaseName() {
+        return this.name.toUpperCase();
+    }
+
 }
