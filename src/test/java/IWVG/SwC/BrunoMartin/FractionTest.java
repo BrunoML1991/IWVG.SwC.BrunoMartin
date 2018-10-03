@@ -32,4 +32,16 @@ class FractionTest {
         assertEquals(1, this.fraction.decimal(), 10e-5);
     }
 
+    @Test
+    void testIsPropiaTrue(){
+        this.fraction = new Fraction(1,3);
+        assertEquals(true,this.fraction.isPropia());
+    }
+
+    @Test
+    void testIsPropiaFalse(){
+        this.fraction = new Fraction(7,4);
+        assertEquals(false,this.fraction.isPropia());
+    }
+
 }
