@@ -52,4 +52,9 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testMedia() {
+        assertEquals(1.5, decimalCollection.media());
+    }
+
 }

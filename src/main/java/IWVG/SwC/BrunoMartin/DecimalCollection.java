@@ -41,4 +41,14 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double media() {
+        double sum = 0;
+        if(!collection.isEmpty()) {
+            for (Double col : collection) {
+                sum += col;
+            }
+            return sum / collection.size();
+        }
+        return sum;
+    }
 }
