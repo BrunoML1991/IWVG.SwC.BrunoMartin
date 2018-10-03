@@ -44,4 +44,12 @@ class FractionTest {
         assertEquals(false,this.fraction.isPropia());
     }
 
+    @Test
+    void testinvert() {
+        this.fraction = new Fraction(7,4);
+        fraction.invert();
+        assertEquals(4,this.fraction.getNumerator());
+        assertEquals(7,this.fraction.getDenominator());
+    }
+
 }
