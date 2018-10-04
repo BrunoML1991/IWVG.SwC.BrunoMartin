@@ -30,6 +30,10 @@ public class Fraction {
         return (this.numerator<this.denominator);
     }
 
+    public double multiply(int numerator, int denominator){
+        return ((this.numerator)*(numerator)) / ((this.denominator)*(denominator));
+    }
+
     public void invert() {
         int temp = this.numerator;
         this.numerator = this.denominator;
