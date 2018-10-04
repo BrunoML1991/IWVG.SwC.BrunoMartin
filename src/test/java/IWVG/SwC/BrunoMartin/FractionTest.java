@@ -52,4 +52,10 @@ class FractionTest {
         assertEquals(7,this.fraction.getDenominator());
     }
 
+    @Test
+    void testMutiply(){
+        double fraction = new Fraction(2,2).multiply(2,2);
+        assertEquals(1, fraction);
+    }
+
 }
