@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class PointTest {
+
     private Point point;
 
     @BeforeEach
@@ -18,7 +19,7 @@ class PointTest {
         assertEquals(2, point.getX());
         assertEquals(3, point.getY());
     }
-    
+
     @Test
     void testPointInt() {
         point = new Point(2);
@@ -41,6 +42,12 @@ class PointTest {
     @Test
     void testPhase() {
         assertEquals(0.9828, point.phase(), 10e-5);
+    }
+
+    @Test
+    void testGetAngle() {
+        Point target = new Point(1, 1);
+        assertEquals(243.4349, point.getAngle(target), 10e-5);
     }
 
     @Test

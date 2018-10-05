@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class DecimalCollectionTest {
+
     private DecimalCollection decimalCollection;
 
     @BeforeEach
@@ -49,6 +50,11 @@ class DecimalCollectionTest {
     @Test
     void testHigherArithmeticExceptionIfEmpty() {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
+    }
+
+    @Test
+    void testMedia() {
+        assertEquals(1.5, decimalCollection.media());
     }
 
 }

@@ -3,9 +3,7 @@ package IWVG.SwC.BrunoMartin;
 public class User {
 
     private int number;
-
     private String name;
-
     private String familyName;
 
     public User(int number, String name, String familyName) {
@@ -36,6 +34,10 @@ public class User {
 
     public String getFamilyName() {
         return this.familyName;
+    }
+
+    public String uppercaseName() {
+        return this.name.toUpperCase();
     }
 
 }

@@ -24,17 +24,7 @@ public class DecimalCollection {
         if (this.collection.isEmpty()) {
             throw new ArithmeticException("Empty collection");
         }
-        /*
-        Version java 1.7
-        double sum = 0;
-        for (double item : this.collection) {
-            sum += item;
-        }
-        return sum;
-        */
-        // return this.collection.stream().mapToDouble(value -> value).sum();
         return this.collection.stream().mapToDouble(Double::doubleValue).sum();
-
     }
 
     public double higher() {
@@ -51,4 +41,14 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double media() {
+        double sum = 0;
+        if (!collection.isEmpty()) {
+            for (Double col : collection) {
+                sum += col;
+            }
+            return sum / collection.size();
+        }
+        return sum;
+    }
 }

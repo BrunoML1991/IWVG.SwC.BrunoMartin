@@ -3,7 +3,6 @@ package IWVG.SwC.BrunoMartin;
 public class Point {
 
     private int x;
-
     private int y;
 
     public Point(int x, int y) {
@@ -25,6 +24,16 @@ public class Point {
 
     public double phase() {
         return Math.atan((double) this.y / this.x);
+    }
+
+    public double getAngle(Point target) {
+        double angle = Math.toDegrees(Math.atan2((double) target.y - y, (double) target.x - x));
+
+        if (angle < 0) {
+            angle += 360;
+        }
+
+        return angle;
     }
 
     public void translateOrigin(Point origin) {
