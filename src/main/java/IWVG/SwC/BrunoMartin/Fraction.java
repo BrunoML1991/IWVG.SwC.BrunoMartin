@@ -27,11 +27,11 @@ public class Fraction {
     }
 
     public boolean isPropia() {
-        return (this.numerator<this.denominator);
+        return (this.numerator < this.denominator);
     }
 
-    public double multiply(int numerator, int denominator){
-        return ((this.numerator)*(numerator)) / ((this.denominator)*(denominator));
+    public double multiply(int numerator, int denominator) {
+        return (double) ((this.numerator) * (numerator)) / (double) ((this.denominator) * (denominator));
     }
 
     public void invert() {

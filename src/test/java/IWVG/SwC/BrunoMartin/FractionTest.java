@@ -45,7 +45,7 @@ class FractionTest {
     }
 
     @Test
-    void testinvert() {
+    void testInvert() {
         this.fraction = new Fraction(7,4);
         fraction.invert();
         assertEquals(4,this.fraction.getNumerator());
@@ -54,8 +54,8 @@ class FractionTest {
 
     @Test
     void testMutiply(){
-        double fraction = new Fraction(2,2).multiply(2,2);
-        assertEquals(1, fraction);
+        double fraction = new Fraction(3,2).multiply(2,2);
+        assertEquals(1.5, fraction);
     }
 
 }

@@ -46,7 +46,7 @@ class PointTest {
 
     @Test
     void testGetAngle() {
-        Point target = new Point(1,1);
+        Point target = new Point(1, 1);
         assertEquals(243.4349, point.getAngle(target), 10e-5);
     }
 

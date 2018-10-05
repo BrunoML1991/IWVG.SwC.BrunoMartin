@@ -43,7 +43,7 @@ public class DecimalCollection {
 
     public double media() {
         double sum = 0;
-        if(!collection.isEmpty()) {
+        if (!collection.isEmpty()) {
             for (Double col : collection) {
                 sum += col;
             }

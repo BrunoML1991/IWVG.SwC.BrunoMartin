@@ -27,9 +27,9 @@ public class Point {
     }
 
     public double getAngle(Point target) {
-        double angle = (double) Math.toDegrees(Math.atan2(target.y - y, target.x - x));
+        double angle = Math.toDegrees(Math.atan2((double) target.y - y, (double) target.x - x));
 
-        if(angle < 0){
+        if (angle < 0) {
             angle += 360;
         }
 
